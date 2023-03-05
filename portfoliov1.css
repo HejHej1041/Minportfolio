@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+
+
+
+nav li {
+    margin: 0 10px;
+    font-size: larger;
+}
+
+nav a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(255, 221, 0);
+}
+
+main {
+    padding: 20px;
+    list-style: none;
+    width: 60%;
+    margin-inline: auto;
+}
+
+section {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.portfolio {
+    color: rgb(10, 10, 10);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+
+.images {
+    max-width: 30%;
+    max-height: 30%;
+    margin: 20px;
+
+
+}
+
+.images:hover {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-block: 15px;
+    color: rgb(255, 0, 0);
+
+
+
+}
+
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.project-link {
+    color: red;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.project-link:hover {
+    font-weight: 900;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: rgb(255, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-weight: bolder;
+
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+
+    background-color: rgb(255, 221, 0);
+
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 221, 0);
+    width: 100%;
+    z-index: 0;
+    height: 50px;
+
+}
+
+.subnav-content a {
+    display: flex;
+    align-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+    right: 0;
+}
+
+.nav-title {
+    flex-grow: 1;
+
+}
+
+header {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    flex-direction: row;
+
+}
+
+.footer-nav-bar {
+    color: rgb(255, 233, 233);
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+
+}
+
+.nav-link:hover {
+    font-weight: 1000;
+}
+
+.my-portfolio {
+    color: #eee;
+    padding-top: 20px;
+}
+
+.project_one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.text {
+    max-width: 30%;
+}
+
+.project_two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.project_three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
