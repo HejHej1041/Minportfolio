@@ -112,7 +112,7 @@ h3 {
 }
 
 .project-link:hover {
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .subnav {
@@ -230,4 +230,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 
+}
+
+.subjekt-röd-färg {
+    color: red;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.subjekt-röd-färg:hover {
+    font-weight: 800;
 }
