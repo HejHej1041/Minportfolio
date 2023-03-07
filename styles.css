@@ -1,0 +1,36 @@
+.project_one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.project_two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.project-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.images {
+    max-width: 30%;
+    max-height: 30%;
+    margin-bottom: 20px;
+
+}
+
+.images:hover {
+    max-width: 50%;
+    max-height: 50%;
+}

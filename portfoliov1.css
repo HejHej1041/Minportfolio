@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: beige;
 }
 
 
@@ -20,7 +20,7 @@ nav li {
 }
 
 nav a {
-    color: rgb(255, 0, 0);
+    color: darkgray;
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(255, 221, 0);
+    background-color: beige;
 }
 
 main {
@@ -43,7 +43,7 @@ section {
     margin: 20px 0;
     border: 1px solid #ccc;
     padding: 20px;
-    background-color: #fff;
+    background-color: darkgray;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
@@ -64,17 +64,7 @@ p {
 
 }
 
-.images {
-    max-width: 30%;
-    max-height: 30%;
-    margin-bottom: 20px;
 
-}
-
-.images:hover {
-    max-width: 50%;
-    max-height: 50%;
-}
 
 
 
@@ -88,8 +78,7 @@ h3 {
     display: flex;
     justify-content: center;
     padding-block: 15px;
-    color: rgb(255, 0, 0);
-
+    color: darkgray;
 
 
 }
@@ -98,7 +87,7 @@ h3 {
 .navbar a {
     float: left;
     font-size: 20px;
-    color: rgb(255, 0, 0);
+    color: beige;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -106,7 +95,7 @@ h3 {
 }
 
 .project-link {
-    color: red;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     font-weight: 650;
 }
@@ -124,7 +113,7 @@ h3 {
     font-size: 20px;
     border: none;
     outline: none;
-    color: rgb(255, 0, 0);
+    color: beige;
     padding: 14px 16px;
     background-color: inherit;
     font-weight: bolder;
@@ -134,14 +123,14 @@ h3 {
 .navbar a:hover,
 .subnav:hover .subnavbtn {
 
-    background-color: rgb(255, 221, 0);
+    background-color: purple;
 
 }
 
 .subnav-content {
     display: none;
     position: absolute;
-    background-color: rgb(255, 221, 0);
+    background-color: purple;
     width: 100%;
     z-index: 0;
     height: 50px;
@@ -151,7 +140,7 @@ h3 {
 .subnav-content a {
     display: flex;
     align-content: center;
-    color: white;
+    color: beige;
     text-decoration: none;
 }
 
@@ -172,7 +161,7 @@ h3 {
 
 header {
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: gray;
 
 }
 
@@ -200,44 +189,38 @@ footer {
 }
 
 .my-portfolio {
-    color: #eee;
+    color: beige;
     padding-top: 20px;
 }
 
-.project_one {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
 
 .text {
     max-width: 30%;
 }
 
-.project_two {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
-}
-
-.project_three {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.subjekt-röd-färg {
-    color: red;
+.subject-black-color {
+    color: rgb(0, 0, 0);
     font-size: 15px;
     font-weight: 650;
 }
 
-.subjekt-röd-färg:hover {
+.subject-black-color:hover {
     font-weight: 800;
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+}
+
+.youtube-video {
+    padding: 30px;
+    -webkit-transition: -webkit-transform 1s;
+
+}
+
+.youtube-video:hover {
+    -webkit-transform: rotate(360deg) translateZ(0);
+
 }
