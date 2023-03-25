@@ -16,9 +16,6 @@
 }
 
 
-/* opacity
-hela rutan ska gå att trycka på */
-/* max-width:100% och max-height:auto; gör bilden responsiv */
 
 .project-link {
     max-width: 50%;
@@ -33,25 +30,23 @@ hela rutan ska gå att trycka på */
 }
 
 @media screen and (max-width:680px) {
-    .project-inline {
-        display: flex;
-        flex-direction: column;
-    }
 
+    .project-inline,
     .portfolio {
         display: flex;
         flex-direction: column;
     }
 
-    .images {
-        max-width: 100%;
-        aspect-ratio: initial;
-    }
 
+    .images,
     .project-link {
         max-width: 100%;
     }
 
+    .images {
+        aspect-ratio: initial;
+
+    }
 
     main {
         width: 90%;
