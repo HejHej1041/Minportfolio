@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="/styles/portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
     <link rel="shortcut icon" href="/images/Monogram-EL-Logo-by-Greenlines-Studios.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/portfolio.css">
+
+    <script src="mobile.js" defer></script>
 </head>
 
 <body>
     <header class="main-header">
         <h1 class="my-portfolio">
             My portfolio</h1>
-        <div class="navbar">
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <div class="subnav">
-                    <button class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="/Minportfolio/portfoliosida.html">Show alla projects</a>
-                        <a href="/History/history.html">Assignment 1</a>
-                        <a href="/position/position.html">Assignment 2</a>
-                        <a href="/position/positionhemsida.html">Assignment 2 (website example)</a>
-                        <a href="/Uppgift-2/test.html">Assignment 3</a>
-                        <a href="/Minportfolio/automatiskgrid.html">Assignment 4</a>
-                    </div>
-                </div>
-                <a href="#About">About me</a>
-                <a href="#Contact">Contact me</a>
+    </header>
+    <div class="primary-navigation">
+        <a href="#">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="/portfoliosida.html" class="nav-link">Show alla projects</a>
+                <a href="/History/history.html" class="nav-link">Assignment 1</a>
+                <a href="/position/position.html" class="nav-link">Assignment 2</a>
+                <a href="/position/positionhemsida.html" class="nav-link">Assignment 2 (website example)</a>
+                <a href="/Uppgift-2/test.html" class="nav-link">Assignment 3</a>
+                <a href="/automatiskgrid.html" class="nav-link">Assignment 4</a>
             </div>
         </div>
-    </header>
+        <div class="mobile-portfolio-link">
+            <a href="/portfoliosida.html">Portfolio</a>
+        </div>
+        <a href="#About">About me</a>
+        <a href="#Contact">Contact me</a>
+    </div>
     <div class="mobile-menu">
         <!-- mobile navigation hamburger button-->
         <p class="mobile-menu__title"><a class="mobile-link" href="#">Portfolio</a></p>
@@ -46,16 +51,16 @@
     <main>
         <section>
             <h1>Welcome to my portfolio!</h1>
-            <p>To view all assignments, click on "show all projects" when hovering over "Portfolio"</p>
+            <p>This is Erik Lindströms e portfolio</p>
         </section>
         <section class="youtube">
-            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/CQo56aQz-4c"
-                title="YouTube video player" frameborder="0"
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/CQo56aQz-4c" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </section>
         </section>
-        <section id=" About" class="About-me">
+        <section id="About" class="About-me">
             <h1>About me</h1>
             <p>I am an 18 year old student from Tyresö who studies at NTI gymnasiet Nacka</p>
         </section>

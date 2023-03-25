@@ -1,0 +1,68 @@
+.project-inline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.images {
+    margin-bottom: 20px;
+    /*align-self: center; */
+    max-width: 25%;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+
+/* opacity
+hela rutan ska gå att trycka på */
+/* max-width:100% och max-height:auto; gör bilden responsiv */
+
+.project-link {
+    max-width: 50%;
+    color: rgb(0, 0, 0);
+    font-size: clamp(1rem, 1.125rem, 2vw);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width:680px) {
+    .project-inline {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images {
+        max-width: 100%;
+        aspect-ratio: initial;
+    }
+
+    .project-link {
+        max-width: 100%;
+    }
+
+
+    main {
+        width: 90%;
+    }
+
+
+}
+
+@media (min-width:681px) {
+    .images:hover {
+        scale: 1.5;
+    }
+
+}
