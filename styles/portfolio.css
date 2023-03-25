@@ -305,6 +305,8 @@ footer {
         background: blue;
         padding-inline: .5rem;
         z-index: 99;
+        position: sticky;
+        top: 0;
     }
 
     .main-header {
