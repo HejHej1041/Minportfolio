@@ -224,6 +224,7 @@ footer {
     -webkit-transition: -webkit-transform 1s;
     align-self: center;
     aspect-ratio: 1;
+    border: 5rem;
 
 }
 
