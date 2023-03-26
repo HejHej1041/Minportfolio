@@ -178,7 +178,7 @@ footer {
     justify-content: center;
     background-color: rgb(0, 0, 0);
     flex-direction: row;
-
+    padding: 10px;
 }
 
 .footer-nav-bar {
@@ -188,7 +188,7 @@ footer {
 .nav-link {
     color: rgb(255, 255, 255);
     font-weight: 500;
-
+    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -294,6 +294,7 @@ footer {
 /* responsivitiy & compability */
 
 
+
 @media (max-width:680px) {
 
     /* Mobile view */
@@ -381,8 +382,6 @@ footer {
     subnav .subnavbtn:hover {
         background-color: red;
     }
-
-
 
 
 }
