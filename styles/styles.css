@@ -1,24 +1,37 @@
 .project-inline {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
+.portfolio {
+    color: black;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.text-text,
+.portfolio-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 .images {
-    margin-bottom: 20px;
-    /*align-self: center; */
-    max-width: 25%;
+    max-width: 250px;
     object-fit: cover;
     aspect-ratio: 1;
 }
 
+h2 {
+    color: black;
 
+}
 
 .project-link {
-    max-width: 50%;
+    max-width: max-content;
     color: rgb(0, 0, 0);
     font-size: clamp(1.1rem, 1.35rem, 2.1vw);
     font-weight: normal;
@@ -31,8 +44,7 @@
 
 @media screen and (max-width:680px) {
 
-    .project-inline,
-    .portfolio {
+    .project-inline {
         display: flex;
         flex-direction: column;
     }

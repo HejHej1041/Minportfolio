@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    font-family: sans-serif;
 }
 
 
@@ -22,7 +22,7 @@ nav li {
 nav a {
     color: darkgray;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -49,13 +49,6 @@ section {
 }
 
 
-
-.portfolio {
-    color: rgb(10, 10, 10);
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
 
 
 p {
@@ -95,7 +88,8 @@ h3 {
 }
 
 
-.mobile-portfolio-link {
+.mobile-portfolio-link,
+.subnav-content {
     display: none;
 }
 
@@ -125,7 +119,6 @@ h3 {
 
 
 .subnav-content {
-    display: none;
     position: absolute;
     width: 100%;
     z-index: 0;
@@ -294,6 +287,17 @@ footer {
     color: white;
 
 }
+
+
+
+.About-me,
+.Contact,
+.portfolio-welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 /* responsivitiy & compability */
 
