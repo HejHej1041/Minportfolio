@@ -4,18 +4,17 @@
     justify-content: space-between;
 }
 
-.portfolio {
-    color: black;
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
-}
 
+.portfolio,
 .text-text,
 .portfolio-intro {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+}
+
+.portfolio {
+    color: black;
+    gap: 3rem;
 }
 
 
@@ -47,6 +46,7 @@ h2 {
     .project-inline {
         display: flex;
         flex-direction: column;
+        gap: 8px;
     }
 
 
