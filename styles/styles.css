@@ -20,7 +20,7 @@
 .project-link {
     max-width: 50%;
     color: rgb(0, 0, 0);
-    font-size: clamp(1rem, 1.125rem, 2vw);
+    font-size: clamp(1.1rem, 1.35rem, 2.1vw);
     font-weight: normal;
     text-decoration: none;
 }
