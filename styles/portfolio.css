@@ -203,13 +203,13 @@ footer {
 
 
 
-.subject-black-color {
+.mail-to-link {
     color: rgb(0, 0, 0);
     font-size: 15px;
     font-weight: 650;
 }
 
-.subject-black-color:hover {
+.mail-to-link:hover {
     font-weight: 800;
 }
 
@@ -221,17 +221,20 @@ footer {
 
 .youtube-video {
     padding: 30px;
-    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
     align-self: center;
     aspect-ratio: 1;
     border: 5rem;
-
 }
 
 .youtube-video:hover {
     -webkit-transform: rotate(360deg) translateZ(0);
-
+    -moz-transform: rotate(360deg) translateZ(0);
+    -ms-transform: rotate(360deg) translateZ(0);
+    transform: rotate(360deg) translateZ(0);
 }
+
+
 
 .mobile-menu {
     /* Don't show the mobile menu bar in normal modes */
@@ -382,6 +385,13 @@ footer {
     .primary-navigation a:hover,
     subnav .subnavbtn:hover {
         background-color: red;
+    }
+
+    main {
+        padding: 20px;
+        list-style: none;
+        width: 90%;
+        margin-inline: auto;
     }
 
 }
