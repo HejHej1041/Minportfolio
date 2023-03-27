@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/History/history.css">
+    <!-- <script src="scripts/image.js" defer></script> -->
+
+    <title>HTMLs Historia & DOM</title>
+</head>
+
+<body class="container">
+    <a class="skip-link" href="#history"> Skip to main content</a>
+    <header class="header">
+        <h1 class="header-caption">HTMLs Historia & Dokumentobjektmodellen</h1>
+    </header>
+    <nav class="primary-navigation">
+        <ul class="primary-navigation__links">
+            <li><a href="#" class="nav-link">Hem</a></li>
+            <li><a href="#history" class="nav-link">Historia</a></li>
+            <li><a href="#dom" class="nav-link">Hur funkar DOM?</a>
+            <li><a href="#lagar" class="nav-link">Lagar</a>
+            <li><a href="#kontakta-mig" class="nav-link">Kontakta mig</a> </li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section id="history" class="main-content__history">
+            <header class="header-html grid-col-span-2">
+                <h2>HTMLs Historia</h2>
+
+            </header>
+
+            <div>
+
+                <p>
+                    Under de första fem åren (1990-1995) gick HTML igenom ett antal revisioner och fick ett antal
+                    tillägg,
+                    främst värd först på CERN och sedan på IETF.
+                </p>
+
+                <p>
+                    Med skapandet av W3C ändrades HTMLs utvecklingsplats igen. Ett första misslyckat försök att utöka
+                    HTML
+                    1995, känd som HTML 3.0, gjorde sedan plats för en mer praktisk metod känd som HTML 3.2, som
+                    slutfördes
+                    1997. HTML4 följde snabbt senare samma år.
+                </p>
+
+                <p>
+                    Året därpå beslutade W3C-medlemskapet att sluta utveckla HTML och istället börja arbeta på en
+                    XML-baserad motsvarighet, kallad XHTML. Detta försök började med en omformulering av HTML4 i XML,
+                    känd
+                    som XHTML 1.0, som inte lade till några nya funktioner förutom den nya serialiseringen, och som
+                    slutfördes 2000. Efter XHTML 1.0 vändes W3C:s fokus till att göra det lättare för andra
+                    arbetsgrupper
+                    att utöka XHTML, under flaggan XHTML Modularization. Samtidigt med detta arbetade W3C också på ett
+                    nytt
+                    språk som inte var kompatibelt med de tidigare HTML- och XHTML-språken, kallar det XHTML2.
+                </p>
+
+                <p>
+                    Runt den tid då HTMLs utveckling stoppades 1998 specificerades delar av API:et för HTML utvecklat av
+                    webbläsarleverantörer och publicerades under namnet DOM Level 1 (1998) och DOM Level 2 Core och DOM
+                    Level 2 HTML (med start 2000 och som kulminerade 2003). Dessa ansträngningar försvann sedan, med
+                    några
+                    DOM nivå 3-specifikationer publicerade 2004 men arbetsgruppen stängdes innan alla nivå 3-utkast var
+                    färdiga.
+                </p>
+
+                <p>
+                    2003 väckte publiceringen av XForms, en teknik som var positionerad som nästa generation av
+                    webbformulär, ett förnyat intresse för att utveckla HTML i sig, snarare än att hitta ersättare för
+                    det.
+                    Detta intresse kom från insikten att XML:s distribution som webbteknik var begränsad till helt nya
+                    teknologier (som RSS och senare Atom), snarare än som en ersättning för befintliga distribuerade
+                    tekniker (som HTML).
+
+                </p>
+
+                <p>
+                    Ett “proof of concept” för att visa att det var möjligt att utöka HTML4s formulär för att
+                    tillhandahålla
+                    många av de funktioner som XForms 1.0 introducerade, utan att webbläsare skulle behöva implementera
+                    renderingsmotorer som var inkompatibla med befintliga HTML-webbsidor, var det första resultatet av
+                    detta
+                    förnyade intresse. I detta tidiga skede, medan utkastet redan var allmänt tillgängligt och input
+                    redan
+                    begärdes från alla källor, var specifikationen endast under Opera Softwares upphovsrätt.
+
+                </p>
+
+                <p>
+                    Idén att HTMLs utveckling skulle återupptas testades vid en W3C-workshop 2004, där några av
+                    principerna
+                    som ligger till grund för HTML5-arbetet (beskrivs nedan), såväl som det tidigare nämnda tidiga
+                    förslaget
+                    som täcker bara formulärrelaterade funktioner, presenterades för W3C gemensamt av Mozilla och Opera.
+                    Förslaget avslogs med motiveringen att förslaget stred mot den tidigare valda riktningen för webbens
+                    utveckling; W3C:s personal och medlemmar röstade för att fortsätta utveckla XML-baserade
+                    ersättningar
+                    istället
+                </p>
+
+                <p>
+
+                    Kort därefter tillkännagav Apple, Mozilla och Opera tillsammans sin avsikt att fortsätta arbeta med
+                    insatsen under paraplyet av en ny plats kallad WHATWG. En offentlig e-postlista skapades och
+                    utkastet
+                    flyttades till WHATWG-webbplatsen. Upphovsrätten ändrades därefter för att ägas gemensamt av alla
+                    tre
+                    leverantörerna och för att tillåta återanvändning av specifikationen.
+
+                </p>
+
+                <p>
+
+                    WHATWG baserades på flera kärnprinciper, särskilt att tekniker måste vara bakåtkompatibla, att
+                    specifikationer och implementeringar måste matcha även om detta innebär att man ändrar
+                    specifikationen
+                    snarare än implementeringarna, och att specifikationer måste vara tillräckligt detaljerade för att
+                    implementeringar kan uppnås. fullständig driftskompatibilitet utan att omvända varandra.
+                </p>
+
+                <p>
+                    Särskilt det senare kravet krävde att omfattningen av HTML5-specifikationen inkluderar vad som
+                    tidigare
+                    hade specificerats i tre separata dokument: HTML4, XHTML1 och DOM2 HTML. Det innebar också att
+                    inkludera
+                    betydligt fler detaljer än vad som tidigare ansetts vara normen.
+
+
+                </p>
+
+                <p>
+                    2006 indikerade W3C ett intresse av att trots allt delta i utvecklingen av HTML5, och 2007 bildade
+                    W3C
+                    en arbetsgrupp för att arbeta med WHATWG om utvecklingen av HTML5-specifikationen. Apple, Mozilla
+                    och
+                    Opera tillät W3C att publicera specifikationen under W3C-upphovsrätten, samtidigt som de behöll en
+                    version med den mindre restriktiva licensen på WHATWG-webbplatsen.
+
+
+                </p>
+
+
+                <p>
+
+
+                    Under ett antal år arbetade sedan båda grupperna tillsammans. 2011 kom dock grupperna till
+                    slutsatsen
+                    att de hade olika mål: W3C ville publicera en "färdig" version av "HTML5", medan WHATWG ville
+                    fortsätta
+                    arbeta med en Living Standard för HTML, med kontinuerligt underhåll av specifikationen istället för
+                    att
+                    frysa den i ett tillstånd med kända problem och lägga till nya funktioner efter behov för att
+                    utveckla
+                    plattformen.
+
+                </p>
+
+
+                <p>
+                    Under 2019 undertecknade WHATWG och W3C ett om att samarbeta om en enda version av HTML framöver:
+                    detta dokument.
+
+                </p>
+            </div>
+            <div class="image-column">
+                <img class="inline-image | inline-image-full" src="/images/apple1990.png" alt="apple 1990">
+                <img class="inline-image | inline-image-full" src="/images/msn-2000-preview.png" alt="msn 2000">
+                <img class="inline image | inline-image-full" src="/images/safari-1-0-preview.png"
+                    alt="Safari 2003 webbsida">
+                <img class="inline-image | inline-image-medium" src="/images/HTML5.png" alt="Html 5 logo">
+            </div>
+        </section>
+        <section id="dom" class="main-content__dom">
+            <header class="header-dom grid-center grid-col-span-2">
+                <h2>Hur fungerar webben och vad är DOM?</h2>
+            </header>
+            <div>
+                <p>
+                    Document Object Model (DOM) är ett programmeringsgränssnitt för webbdokument. Den representerar
+                    sidan
+                    så att program kan ändra dokumentets struktur, stil och innehåll. DOM representerar
+                    dokument som noder och objekt; på så sätt kan programmeringsspråk interagera med sidan.
+
+                </p>
+                <p>
+                    En webbsida är ett dokument som antingen kan visas i webbläsarfönstret eller som HTML-källa.
+                    I båda fallen är det samma dokument men DOM-representationen (Document Object Model) tillåter det
+                    att manipuleras. Som en objektorienterad representation av webbsidan kan den modifieras med en
+                    skriptspråk som JavaScript.
+
+                </p>
+                <p>
+                    Till exempel anger DOM att metoden querySelector All i det här kodavsnittet måste returnera en
+                    lista över alla p-element i dokumentet
+
+
+
+                </p>
+            </div>
+            <img class="inline-image | inline-image-large" src="/images/1200px-DOM-model.svg.png"
+                alt="document object model schematic">
+        </section>
+        <section id="lagar" class="main-content__lagar">
+            <header class="header-lagar grid-center grid-col-span-2">
+                <h2>Lagar och regler på nätet</h2>
+            </header>
+            <div>
+                <p>
+                    Det finns många olika lagar och bestämmelser som styr digital information. Här är några exempel:
+
+                    Upphovsrätt: Upphovsrätten reglerar användning av upphovsrättsskyddat material, som musik, filmer,
+                    böcker och bilder, på nätet.
+                </p>
+                <p>
+                    Dataskydd och integritet: Lagar som EU:s dataskyddsförordning (GDPR) och svenska personuppgiftslagen
+                    (PUL) reglerar hur personuppgifter får behandlas på nätet, inklusive vilka rättigheter individer har
+                    när
+                    det gäller sina egna personuppgifter.
+
+
+                </p>
+                <p>
+                    E-handel: Det finns lagar som reglerar sådant som prissättning, avtalsvillkor och rätten att ångra
+                    ett
+                    köp på nätet.
+
+                </p>
+                <p>
+                    E-postmarknadsföring: Det finns lagar som reglerar hur företag får använda e-post för att
+                    marknadsföra
+                    sina
+                    produkter och tjänster.
+                </p>
+                <p>
+                    Företagshemligheter: Det finns lagar som skyddar företagshemligheter, vilket innebär att företag
+                    inte
+                    får lämna ut information om affärshemligheter till tredje part utan tillstånd.
+                </p>
+                <p>
+                    Det är viktigt att vara medveten om de lagar och bestämmelser som gäller för de aktiviteter du vill
+                    utföra på nätet. Om du är osäker på vad som gäller, kan det vara en bra idé att rådgöra med en
+                    jurist
+                    eller söka information på myndigheters hemsidor.
+                </p>
+            </div>
+            <div class="image-column">
+                <img class="inline-image | inline-image-medium"
+                    src="/images/9884502a80a8b12f817e7acebb2f297c76d95564.jpg" alt="bild på lagbok">
+                <img class="inline-image | inline-image-medium" src="/images/jurist-ung-1.jpg" alt="bild på en jurist">
+
+            </div>
+        </section>
+        <section id="kontakta-mig">
+            <header class="header-dom grid-center grid-col-span-2">
+                <h2>Kontakta mig</h2>
+            </header>
+            <form action=" https://formsubmit.co/erik.lindstrom@elev.ga.ntig.se" method="POST" class="mail">
+
+
+                <fieldset class="message-box">
+                    <legend>Send message</legend>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required />
+                    <input type="hidden" name="_subject" value="New email !">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                    <label for="text">Name:</label>
+                    <input type="text" name="text" id="text" required>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="50" rows="4"></textarea>
+                    <div class="btn-send"><button class="send" type="submit" id="send" name="send">Send</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-nav-bar">
+
+            <ol class="footer-navigation">
+                <li><a class="nav-link" href="#">Tillbaka till toppen</a></li>
+                <li><a class="nav-link" href="/portfoliosida.html">Visa alla projekt</a></li>
+                <li><a class="nav-link" href="/portfolio.html">Om mig</a></li>
+            </ol>
+
+
+            <div>
+                <p class="footer-text">Copyright &copy; 2022 -Erik Lindström x Rainbow Six Siege </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
